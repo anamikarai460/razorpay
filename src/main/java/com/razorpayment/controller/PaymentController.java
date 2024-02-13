@@ -16,7 +16,7 @@ public class PaymentController {
    // http://localhost:8080/api/create-order
     @PostMapping("/create-order")
     public String createOrder(@RequestBody OrderRequest order) throws RazorpayException {
-        RazorpayClient razorpay = new RazorpayClient("rzp_test_1j2WgtDgY0EtKz", "FX7qLf5ByGUHoq2UJ8wn3LNL");
+        RazorpayClient razorpay = new RazorpayClient("rzp_test_1j2WgtDgY0", "FX7qLf5ByGUHoq2UJ8wL");
 
         JSONObject orderRequest = new JSONObject();
         orderRequest.put("amount",order.getAmount()*100);
